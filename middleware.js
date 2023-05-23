@@ -4,7 +4,7 @@ const AppAvailability = (req, res, next) => {
     const currentDay = new Date().getDay();
     const currentHours = new Date().getHours();
 
-    if ((currentDay >= 3 && currentDay <= 5) && (currentHours >= 9 && currentHours < 23)) {
+    if ((currentDay >= 3 && currentDay <= 5) && (currentHours >= 9 && currentHours <= 17)) {
         next();
     }else{
         res.status(403).send(`
