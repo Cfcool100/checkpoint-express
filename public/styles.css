@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+.container{
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ebf1f1;
+}
+h1{
+    font-size: 5rem;
+    color: #2c3f50;
+}
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+}
+.link{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #101010;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+.link:nth-child(2){
+    margin: 0 3.5rem;
+}
+.link:hover{
+    border-bottom: 5px solid #bec;
+    padding-bottom: .3rem;
+    border-radius: 0 .2rem .2rem ;
+}
